@@ -47,3 +47,5 @@ app.*.map.json
 # Rahasia dan Konfigurasi Lokal
 .env
 key.properties
+
+# Selesai
