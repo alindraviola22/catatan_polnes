@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../data/repository/catatan_repository_memori.dart';
 import '../../domain/entity/catatan.dart';
 import '../../domain/repository/catatan_repository.dart';
+import '../../data/repository/catatan_repository_memori.dart';
 
 final catatanRepositoryProvider = Provider<CatatanRepository>((ref) {
   return CatatanRepositoryMemori();
@@ -27,5 +27,6 @@ class DaftarCatatanNotifier extends Notifier<List<Catatan>> {
 }
 
 final daftarCatatanProvider =
-NotifierProvider<DaftarCatatanNotifier, List<Catatan>>(
-    DaftarCatatanNotifier.new);
+    NotifierProvider<DaftarCatatanNotifier, List<Catatan>>(
+      DaftarCatatanNotifier.new,
+    );
