@@ -1,13 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'domain/entity/catatan.dart';
+import '../../domain/entity/catatan.dart';
 
 class KartuCatatan extends StatelessWidget {
-  const KartuCatatan({
-    super.key,
-    required this.catatan,
-    required this.onKetuk,
-  });
+  const KartuCatatan({super.key, required this.catatan, required this.onKetuk});
 
   // Peringatan: Kata 'Catatan' di bawah ini mungkin akan bergaris merah. Abaikan dulu!
   final Catatan catatan;
@@ -37,8 +33,7 @@ class KartuCatatan extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  if (catatan.disematkan)
-                    const Icon(Icons.push_pin, size: 18),
+                  if (catatan.disematkan) const Icon(Icons.push_pin, size: 18),
                 ],
               ),
               const SizedBox(height: 6),
