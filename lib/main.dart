@@ -13,7 +13,7 @@ class AplikasiCatatan extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Catatan POLNES',
+      title: 'KELOMPOK 1',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF143D6B)),
